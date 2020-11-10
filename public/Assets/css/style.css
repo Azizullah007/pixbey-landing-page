@@ -96,7 +96,7 @@ h1 {
 /* ========== HERO ========= */
 
 #hero{
-    background: url(/public/dark-blue2.png);
+    background: url(/public/Assets/img/dark-blue2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -109,7 +109,7 @@ h1 {
 #hero::before{
     content: '';
     position: absolute;
-    background-image: url(/public/color.svg), url(/public/Assets/img/woman-in-blue.png);
+    background-image: url(/public/Assets/img/color.svg), url(/public/Assets/img/woman-in-blue.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
