@@ -1,4 +1,390 @@
-html {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: #F9F9FF;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.btn-white{
+    border: 2px solid #ffffff;
+}
+
+.container-fluid{
+    padding: 0 10rem;
+}
+
+
+/* Section Title */
+
+
+
+/* ========== NAVIGATION ========= */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar {
+    padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+.navbar-nav .nav-item{
+    padding: 0 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ffffff;
+}
+
+.active a {
+    border-bottom: 3px solid blue;
+}
+
+/* .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 4px solid blue;
+} */
+
+.myButton-nav {
+	background-color:#ffffff;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	/* color:#000000; */
+    font-family:Arial;
+    border: none;
+    margin-left: 20px;
+	font-size:20px;
+	padding:0 20px;
+	text-decoration:none;
+}
+.myButton-nav a:hover{
+    text-decoration: none;
+}
+/* .myButton-nav:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton-nav:active {
+	position:relative;
+	top:1px;
+} */
+
+
+/* ========== HERO ========= */
+
+#hero{
+    background: url(/public/dark-blue2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* padding-top: 5rem; */
+    position: relative;
+    top: -7rem;
+    height: 107vh;
+}
+
+#hero::before{
+    content: '';
+    position: absolute;
+    background-image: url(/public/color.svg), url(/public/Assets/img/woman-in-blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+.header-title{
+    padding-top: 20rem;
+}
+
+.heading-img{
+    padding-top: 10rem;
+}
+
+.main-hero-content h1{
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+}
+
+.main-hero-content p{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:22px;
+	padding:20px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.fa-long-arrow-alt-right{
+    padding-left: 10px;
+}
+
+
+/* Why us */
+.whyus-main-title{
+    padding: 0 120px;
+}
+
+.whyus-title h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    padding-top: 40px;
+}
+
+.whyus-text{
+    padding-top: 150px;
+}
+.whyus-text h2{
+    font-size: 42px;
+}
+.whyus-text p{
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.whyus-description p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #707070;
+    padding: 20px 0;
+}
+
+.whyus-myButton {
+	/* background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%); */
+	background-color: blue;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	padding:10px 30px;
+	text-decoration:none;
+}
+
+.whyus-myButton:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.whyus-img{
+    position: relative;
+    object-fit: cover;
+    height: 700px;
+}
+
+.whyus-img1{
+    position: absolute;
+    z-index: 0;
+}
+
+.whyus-img2{
+    position: absolute;
+    height: 900px;
+    padding-left: 300px;
+    top: -90px;
+}
+
+/* Contact Form */
+form{
+    margin: 2rem;
+    width: 1000px;
+    font-family: 'Poppins', sans-serif;
+}
+.formcontainer{
+    background-color: #333697;
+    border-radius: 30px;
+}
+.form-box{
+    padding: 1rem 3rem 1rem 7rem;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+.form-box h1{
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.form-box p{
+    color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.form-box:first-child{
+    padding-top: 50px;
+}
+.form-box:last-child{
+    padding-bottom: 100px;
+}
+.form-box label{
+    font-size: 20px;
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    color: #ffffff;
+    padding-top: 15px;
+}
+.form-box input{
+    font-size: 20px;
+    width: 600px;
+    padding: 0.25rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 50px;
+}
+.form-box textarea{
+    outline: none;
+    border: none;
+    height:200px;
+    width:600px;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    font-size: 20px;
+}
+.form-box select{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    width: 600px;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    height: 50px;
+}
+
+select:required:invalid {
+    color: #666;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: #000;
+  }
+  select {
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right rgb(255, 255, 255);
+    -webkit-appearance: none;
+    background-position-x: 550px;
+}
+
+
+.form-box option{
+    font-size: 20px;
+    width: 300px;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+}
+.form-box input[type="checkbox"]{
+    font-size: 20px;
+}
+.form-box button{
+    font-size: 1rem;
+    border: none;
+    padding: 0.25rem 2rem;
+    margin-right: 1rem;
+    color: white;
+    background-color:#333697;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 58px;
+    top: 155px;
+    width: 129px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.error::after{
+    background-color: hsl(10, 60%, 50%);
+    color: papayawhip;
+    font-size: 1rem;
+    line-height: 1.8;
+    width: 350px;
+    padding-left: 1rem;
+    position:absolute;
+    right: 0;
+    content: attr(data-errormsg);
+}
+
+
+/* Footer */
+
+.list-inline-item a{
+    border: 1px solid #9C9CA8;
+    border-radius: 50px;
+    color: #9C9CA8;
+}
+
+.page-footer{
+    padding: 50px 140px 10px;
+    background-color: #EBEBF8;
+}
+
+.footer-text{
+    color: #9C9CA8;
+}
+
+.footer-text1{
+    padding: 30px 0 0 0;
+    color: #9C9CA8;
+}
+.footer-text span{
+    padding: 0 10px;
 }
